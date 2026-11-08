@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cachelet"
+version = "0.1.0"
+description = "Tiny, zero-dependency LRU and LFU caches with O(1) operations, TTL, stats and a decorator."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["cache", "lru", "lfu", "ttl", "memoization", "data-structures", "algorithms"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/cachelet"
+
+[tool.setuptools]
+packages = ["cachelet"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules cachelet tests"

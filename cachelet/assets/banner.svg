@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="cachelet: LRU and LFU caches">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1A1027"/><stop offset="1" stop-color="#2B1233"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBBF24"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#FBBF24"/></marker>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <circle cx="1110" cy="20" r="150" fill="#EC4899" opacity=".10"/>
+  <circle cx="70" cy="330" r="130" fill="#F59E0B" opacity=".10"/>
+  <g transform="translate(70,70) scale(1.15)"><rect width="128" height="128" rx="28" fill="url(#lg)"/>
+    <rect x="30" y="22" width="68" height="30" rx="9" fill="#fff" opacity=".35"/>
+    <rect x="30" y="46" width="68" height="30" rx="9" fill="#fff" opacity=".65"/>
+    <rect x="30" y="70" width="68" height="30" rx="9" fill="#fff"/>
+    <circle cx="46" cy="85" r="6" fill="#EC4899"/>
+    <rect x="58" y="81" width="30" height="8" rx="4" fill="#F59E0B"/>
+    <path d="M104 40 q10 14 0 28" fill="none" stroke="#FDE047" stroke-width="6" stroke-linecap="round"/>
+    <path d="M100 66 l6 4 l-8 3" fill="none" stroke="#FDE047" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="240" y="150" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="68" font-weight="800" fill="#F8FAFC">cache<tspan fill="url(#ac)">let</tspan></text>
+  <text x="242" y="196" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" fill="#E2D5F0">LRU and LFU caches in O(1). Tiny and tested.</text>
+  <text x="242" y="236" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="20" fill="#A592BA">hash map  +  linked list  ·  TTL  ·  zero dependencies</text>
+
+  <text x="742" y="78" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="22" fill="#FBBF24">put("E")</text>
+  <line x1="742" y1="90" x2="742" y2="122" stroke="#FBBF24" stroke-width="3" marker-end="url(#ah)"/>
+    <rect x="700" y="130" width="84" height="84" rx="14" fill="#7C2D6B" stroke="#F472B6" stroke-width="2"/><text x="742" y="184" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="40" font-weight="700" fill="#FFF">E</text>
+  <rect x="798" y="130" width="84" height="84" rx="14" fill="#3B1E54" stroke="#F472B6" stroke-width="2"/><text x="840" y="184" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="40" font-weight="700" fill="#FFF">D</text>
+  <rect x="896" y="130" width="84" height="84" rx="14" fill="#3B1E54" stroke="#F472B6" stroke-width="2"/><text x="938" y="184" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="40" font-weight="700" fill="#FFF">A</text>
+  <rect x="994" y="130" width="84" height="84" rx="14" fill="#3B1E54" stroke="#F472B6" stroke-width="2"/><text x="1036" y="184" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="40" font-weight="700" fill="#FFF">C</text>
+  <rect x="1092" y="130" width="84" height="84" rx="14" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <text x="1134" y="184" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="40" font-weight="700" fill="#EF4444" opacity=".7">B</text>
+  <text x="1134" y="240" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="18" fill="#EF4444">evicted</text>
+  <text x="700" y="262" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="17" fill="#A592BA">← most recent</text>
+  <text x="1078" y="262" text-anchor="end" font-family="'SFMono-Regular',Consolas,'Courier New',monospace" font-size="17" fill="#A592BA">least recent →</text>
+</svg>
